@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Apples</title>
+    <script src="https://kit.fontawesome.com/bfd858aa6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+                @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* NAVBAR */
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-dark .navbar-brand {
+            color: #1adc1a;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-menu a{
+            float: none;
+            color:black;
+            line-height: 2;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-menu a:hover{
+            background-color: lightgrey;
+            text-decoration: none;
+        }
+
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+
+        .dropdown:hover{
+            background-color: transparent;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 8.7px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+/* MAIN CONTENT */
+
+.div1{
+    border: rgb(4, 71, 146) 11px solid;
+    text-align: center;
+    background: rgb(4, 71, 146);
+    
+    
+   
+
+}
+
+.h1{ 
+font-size: 200%;
+font-weight: 400;
+color: white;
+}
+
+
+
+.img1{
+    width: 450px;
+    height: 350px;
+}
+.btn1{
+    width: 20rem;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.under-product-name{
+    font-weight: 200;
+    margin-top: -0.5rem;
+}
+.third{
+   font-weight: 700;
+   font-size: 1.9rem;
+}
+.fourth{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.fas1{
+    
+    font-size: 1rem;
+}
+.btn2{
+    margin-top: 1.2%;
+    width: 200px;
+    border: none;
+    margin-left: -20%;
+    
+}
+
+
+
+
+
+
+/* SIZING */
+
+/* XS Devices */
+@media (min-width: 300px) { 
+    .nav{
+        margin-bottom: 18%;
+    }
+    .sidebar{
+        margin-bottom: -27%;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .nav{
+        margin-bottom: 13.5%;
+    }
+   
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .nav{
+        margin-bottom: 9%;
+    }
+    
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav{
+        margin-bottom: 10%;
+    }
+    .sidebar{
+        margin-top: -1rem;
+    }
+    .description{
+        position: relative;
+        left: 6rem;
+    }
+    
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .nav{
+        margin-bottom: 6%;
+    }
+    
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .nav{
+        margin-bottom: 5.5%;
+    }
+    .sidebar{
+        margin-top: -1rem;
+    }
+    .description{
+        position: relative;
+        left: -1rem;
+    }
+    .accordion-container{
+        position: relative;
+        right: 1px;
+    }
+ }
+ /* XXX-Large Devices */
+ @media (min-width: 2000px) {
+    .nav{
+        margin-bottom: 4%;
+    }
+    .sidebar{
+        margin-top: -1.5rem;
+    }
+    .description{
+        position: relative;
+        left: -1rem;
+    }
+    .div1{
+        margin-top: 1rem;
+    }
+    .accordion-container{
+        position: relative;
+        left: 173px;
+    }
+ }
+ @media (min-width: 2300px) {
+    .accordion-container{
+        position: relative;
+        left: 373px;
+    }
+ }
+
+
+ /* ACCORDION */
+
+.accordion{
+    margin-top: 0.5rem;
+}
+.more-description{
+   text-decoration: none;
+   color: black;
+   
+}
+.more-description:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/* INCREMENT */
+
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+.logo {
+        font-size: 25px;
+        font-weight: 700;
+        transform: scale(2, 2);
+        color: black;
+      }
+      .logo a {
+        text-decoration: none !important;
+      }
+      .logo-sub {
+        color: #f8ea1f;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    <script type="text/javascript" src="code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+    <!-- NAVBAR -->
+    <div class="container-fluid nav">
+        
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand"  href="../../Front Store/HomePage.html">
+                <img src="../../Metadata/icon.svg" height="39" width="62"/> 
+                <p class="logo" style="display: inline">
+                    <span class="logo-sub">U</span>Markt
+                  </p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Front Store/HomePage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="dropbtn">
+                            Aisle
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../Aisle/Fruits&veggies.html">Fruits and vegetables</a>
+                            <a class="dropdown-item" href="../Aisle/Bakery.html">Bakery</a>
+                            <a class="dropdown-item" href="../Aisle/Frozen.html">Frozen</a>
+                            <a class="dropdown-item" href="../Aisle/Butchery.html">Butchery</a>
+                            <a class="dropdown-item" href="../Aisle/Seafood.html">Seafood</a>
+                        </div>
+                    </li>
+                    
+                  
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Front Store/Shopping-Cart.html">Shopping Cart</a>
+                    </li>
+                    
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Front Store/Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../Back Store/ProductList/ProductList.html">Back Store Page</a>
+                    </li>
+                </ul>
+                </div>
+        </nav>
+    </div>
+ </div>
+
+ <div class="div1">
+    <h1 class="h1">BAKERY </h1>
+    
+</div>
+ 
+ <!-- MAIN-CONTNET -->
+ <div class="container-fluid">
+     <div class="row">
+
+         <!-- <div class="col-xs-12 col-sm-12 col-md- col-lg-2 col-xl-2 sidebar">
+          
+           
+         </div> -->
+
+         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 wrapper">
+          
+            <div class="container" style="margin-top:30px">
+                <div class="row1">
+        
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            
+                        <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/09/health-benefits-of-apples-732x549-thumbnail-732x549.jpg?w=756&h=567" alt="" class="img1">
+            
+                    </div>
+
+        
+        
+        
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 description">
+            
+                        <h4 class="product-name">Apples</h4>
+                        <span></span>
+                        <p class="under-product-name"></p>
+                        <br>
+
+                   
+                        
+                        <br>
+                        <br>
+
+                        Quantity:
+                        <div class="box">
+                            <input type="number" value="0">
+                        </div>
+
+                        
+                        <br>
+
+                        <button type="button" class="btn btn-dark btn1 add-cart"><i class="fas fa-shopping-cart fas"></i> ADD</button>
+                        
+                       
+                        
+
+
+
+                        
+                           
+
+                    
+                    </div>
+
+                   
+
+                </div>
+
+                
+
+              </div>
+        </div>
+
+          <div class="col-3">
+           <a href="../../Front Store/Shopping-Cart.html"> <button type="button" class="btn btn-dark btn2" id="menu-toggle"><i class="fas fa-shopping-cart fas1"></i> SHOPPING CART <span class="cart-span">0</span></button> </a>
+         </div> 
+
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2 ml-3 accordion-container">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="more-description">More Description <i class="fas fa-arrow-down"></i> </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">The mild yet sweet flavour of the Gala apple has made it a family favourite for snacks, salads and sauces. The vibrant red mixes in with subtle hints of green to give the apple its unmistakable look.
+                </div>
+              </div>
+    </div>
+
+    
+   
+
+
+
+</script>
+  
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.required{
+  
+  color:red;
+  font-size: 0.8rem;
+  visibility: hidden;
+  max-height: 0;
+  position:absolute;
+}
+.verified{
+  color:forestgreen;
+  font-size: 0.8rem;
+  visibility: hidden;
+  max-height: 0;
+  position:absolute;
+}
+.logo{
+  font-size: 25px;
+  font-weight: 700;
+  transform: scale(2, 2);
+  display: inline-block;
+}
+.logo a{
+text-decoration: none !important;
+;
+}
+.logo-sub{
+  color: #f8ea1f;
+}
+.sub-title-1{
+  color: #f8ea1f;
+}
+h1 {
+  font-size: 24px !important;
+  font-family: 'Merriweather', serif;
+  font-weight: bold !important;
+}
+.inner-title{
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+.main {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0px;
+  overflow: auto;
+  border: 1px solid #efefef;
+}
+.main.register {
+  background-image: url("https://www.spinneyslebanon.com/media/guestpages/default/registerBG.jpg");
+}
+.main.login {
+  background-image: url("https://www.spinneyslebanon.com/media/guestpages/default/loginBG.jpg");
+}
+.main.reset{
+  background-image: url(https://www.spinneyslebanon.com/media/guestpages/default/ForgetPasswordBG.jpg);
+}
+form{
+  margin: 15px;
+}
+.login-box {
+  background-color: white;
+  width: 830px;
+  height: 100%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+}
+@media screen and (max-width: 992px) {
+  .login-box {
+    width: 90%;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .register-box {
+    display: inline !important;
+    
+  }
+  .main {
+    background-position: top left;
+  }
+  .col-right {
+    border-left: none !important;
+  }
+ 
+}
+.box-head {
+  text-align: center;
+}
+
+.btn-black {
+  font-weight: bold !important;
+  margin-bottom: 10px;
+  background-color: #ffed00 !important;
+  color: black !important;
+  width: 30%;
+  transition: 0.4s !important;
+}
+
+.btn-black:hover {
+  background-color: black !important;
+  color: white !important;
+}
+.btn-reset{
+  font-weight: bold !important;
+  margin-bottom: 10px;
+  background-color: black !important;
+  color: white !important;
+  width: 30%;
+  transition: 0.4s !important;
+}
+.btn-reset:hover{
+  background-color: #ffed00 !important;
+  color: black !important;
+}
+.mid {
+  margin-top: 2rem;
+  text-align: center;
+}
+.box-head a {
+  font-weight: 700;
+  text-decoration: underline ;
+  color: #333 !important;
+  transition: 0.4s;
+}
+.box-head a:hover {
+  color: #f8ea1f !important;
+}
+
+.mid a {
+  font-weight: 300;
+  text-decoration: underline !important;
+  color: #333 !important;
+  transition: 0.4s;
+}
+.mid a:hover {
+  color: #f8ea1f !important;
+}
+
+.register-box {
+  display: flex;
+  margin: 15px;
+}
+
+.col-right {
+  border-left: solid rgba(0, 0, 0, 0.301) 1px;
+
+  vertical-align: center;
+}
+.btn-group {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.info{
+  margin:15px;
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.678);
+}
+.back{
+  color: black;
+  text-decoration: underline;
+  font-size: 10px;
+}
+input:invalid{
+  border-color: rgb(255, 10, 10);
+}
+input:valid{
+  border-color: #ced4da;
+}

@@ -1,0 +1,23 @@
+
+  <body>
+    <div class="main login">
+      <div class="login-box">
+        <div class="box-head">
+          <p class="logo"><a href="home.php"><span class="logo-sub">U</span>Markt</a></p>
+          <h1>Sign in to your account.</h1>
+          <hr style="width: 400px; margin: auto" />
+          <p class="inner-title">
+            Dont have an account? <a href="../php/adduser.php">Sign up now.</a>
+          </p>
+          <hr style="width: 400px; margin: auto" />
+        </div>
+        <form name="login" method="POST" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label>Email Address<sup>*</sup></label>
+            <input name="email" type="text" id="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label>Password<sup>*</sup></label>
+            <input name="password" type="password" id="password" class="form-control" id=password required />
+          </div>
+    

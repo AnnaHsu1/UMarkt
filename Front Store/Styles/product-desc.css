@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN CONTENT */
+
+.div1{
+    border: rgb(4, 71, 146) 11px solid;
+    text-align: center;
+    background: rgb(4, 71, 146);
+}
+
+.h1{
+    font-size: 200%;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+.img1{
+    width: 450px;
+    height: 350px;
+}
+.btn1{
+    width: 20rem;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.under-product-name{
+    font-weight: 200;
+    margin-top: -0.5rem;
+}
+.third{
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.fourth{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+.fas1{
+
+    font-size: 1rem;
+}
+.btn2{
+    margin-top: 1.2%;
+    width: 200px;
+    border: none;
+    margin-left: -20%;
+}
+
+
+/* SIZING */
+
+/* XS Devices */
+@media (min-width: 300px) {
+    .nav{
+        margin-bottom: 18%;
+    }
+    .sidebar{
+        margin-bottom: -27%;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .nav{
+        margin-bottom: 13.5%;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav{
+        margin-bottom: 9%;
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav{
+        margin-bottom: 10%;
+    }
+    .sidebar{
+        margin-top: -1rem;
+    }
+    .description{
+        position: relative;
+        left: 6rem;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .nav{
+        margin-bottom: 6%;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .nav{
+        margin-bottom: 5.5%;
+    }
+    .sidebar{
+        margin-top: -1rem;
+    }
+    .description{
+        position: relative;
+        left: -1rem;
+    }
+    .accordion-container{
+        position: relative;
+        right: 1px;
+    }
+}
+/* XXX-Large Devices */
+@media (min-width: 2000px) {
+    .nav{
+        margin-bottom: 4%;
+    }
+    .sidebar{
+        margin-top: -1.5rem;
+    }
+    .description{
+        position: relative;
+        left: -1rem;
+    }
+    .div1{
+        margin-top: 1rem;
+    }
+    .accordion-container{
+        position: relative;
+        left: 173px;
+    }
+}
+@media (min-width: 2300px) {
+    .accordion-container{
+        position: relative;
+        left: 373px;
+    }
+}
+
+
+/* ACCORDION */
+
+.accordion{
+    margin-top: 0.5rem;
+}
+.more-description{
+    text-decoration: none;
+    color: black;
+
+}
+.more-description:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/* INCREMENT */
+
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    transform: scale(2, 2);
+    color: black;
+}
+.logo a {
+    text-decoration: none !important;
+}
+.logo-sub {
+    color: #f8ea1f;
+}

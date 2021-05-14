@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../Metadata/icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<style>
+ 
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      *{
+        font-family: 'Montserrat', sans-serif;
+      }  
+.box {
+  background-color: white;
+  width: 830px;
+  height: 100%;
+  margin: auto;
+  margin-top: 75px;
+  padding: 30px;
+  
+}
+  body{
+
+    background-image:url("https://previews.123rf.com/images/kesu87/kesu871904/kesu87190400027/120480515-greek-food-background-traditional-different-greek-dishes-top-view-close-up.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .box-size{
+
+    width: 100%;
+  }
+  .logo{
+  font-size: 25px;
+  font-weight: 700;
+  transform: scale(2, 2);
+  display: inline-block;
+  text-align: center;
+  
+  
+}
+.logo a {
+        text-decoration: none !important;
+        color: black;
+        
+      }
+
+.line{
+    font-size: 24px !important;
+    text-align: center;
+  font-weight: bold !important;
+}
+.submit{
+    text-align: center;
+    
+    
+}
+.container{
+    text-align: center;
+}
+
+button{
+  background-color: yellow;
+  border: none;
+  width: 100%;
+}
+.back{
+  color: black;
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+
+</style>
+    
+</head>
+
+<body>
+
+<div class="big-box">
+
+<div class ="box">
+    
+    <div class="container">
+    <p class="logo"><a href="../php/home.php"><span class="logo-sub" style="color: yellow;">U</span>Markt</a></p>
+    </div>
+    
+    <p class="line">Contact us</p>
+    <hr>
+    <form method="POST">
+    
+        <div class = "form-box">
+           <label name="tag">Email</label> <br/>
+           <input type="email"class="box-size" name="username" required/>
+        </div>
+        
+        <div class = "form-box">
+            <label>Item name</label> <br/>
+            <input type="text" class="box-size" name="item" />
+        </div>
+
+        <div class = "form-box">
+            <label>Order number</label> <br/>
+            <input type="text" id="order-number"class="box-size"name="order" pattern="^\d{5}[A-Z][A-Z]$" oninvalid="setCustomValidity('Please enter a correct format (#12345AB)')"/><p id="msg" style="color: red;"></p>
+        </div>
+
+        <div class = "form-box">
+            <label>Questions</label> <br/>
+            <textarea class="box-size" rows="4" cols="50"></textarea>
+        </div>
+
+        <br/>
+
+        <div class ="submit">
+            <button type="submit" name="enter" >Submit</button>        
+        </div>
+
+          <br>
+          <p><a href="../php/home.php" class="back"> BACK TO HOME PAGE</a></p>
+       
+       
+ 
+
+
+    </form>
+</div>
+</div>    
+</body>
+</html>

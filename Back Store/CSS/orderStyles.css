@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    transform: scale(2, 2);
+    color: black;
+}
+
+.logo a {
+    text-decoration: none !important;
+}
+
+.logo-sub {
+    color: #f8ea1f;
+}
+
+body {
+    background-image: url("https://cdn.wallpapersafari.com/22/18/riY3Ba.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    background-attachment: fixed;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-brand {
+    color: #1adc1a
+}
+
+.navbar-brand {
+    font-size: 25px;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    float: none;
+    color: black;
+    line-height: 2;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: transparent;
+}
+
+.title.jumbotron {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #202326;
+    color: white;
+}
+
+.container {
+    width: 30em;
+}

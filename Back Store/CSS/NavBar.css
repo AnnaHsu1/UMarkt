@@ -1,0 +1,132 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-item{
+    margin:auto;
+}
+h3{
+    font-size: 24px !important;
+    font-family: 'Merriweather', serif;
+    font-weight: bold !important;      }
+
+h2{
+    font-size: 30px !important;
+    font-family: 'Merriweather', serif  !important;
+    font-weight: bold !important;
+}
+html{
+    height: 100%;
+}
+.steps{
+    display: flex;
+    justify-content: space-evenly;
+}
+.step{
+    width: 25%;
+}
+.nav-content{
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.navbar-collapse{
+    justify-content:space-evenly;
+}
+.main{
+    width: 80%;
+    margin: auto;
+}
+.banner-item{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+.banner-img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    transform: scale(2, 2);
+    color: rgb(255, 255, 255);
+}
+
+.steps-title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.logo a {
+    text-decoration: none !important;
+}
+.logo-sub {
+    color: #f8ea1f;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar{
+    background-color: black !important;
+}
+.navbar-dark .navbar-brand {
+    color: #1adc1a;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    text-align: center;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu a{
+    float: none;
+    color:black;
+    line-height: 2;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-menu a:hover{
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown:hover{
+    background-color: transparent;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8.7px;
+}
+
+.navbar-fixed-top {
+    top: -70px;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;/* you'll have to figure out the exact number here */
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

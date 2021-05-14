@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> Shopping Cart  </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="main.css">
+    <link rel="stylesheet"href="cart.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+     /* NAVBAR */
+     .logo {
+        font-size: 25px;
+        font-weight: 700;
+        transform: scale(2, 2);
+        color: black;
+        
+      }
+      .logo a {
+        text-decoration: none !important;
+        
+      }
+      .logo-sub {
+        color: #f8ea1f;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: white;
+      }
+
+      .navbar-dark .navbar-brand {
+        color: #1adc1a;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .dropdown-menu{
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        z-index: 1;
+      }
+
+      .dropdown-menu a{
+        float: none;
+        color:black;
+        line-height: 2;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-menu a:hover{
+        background-color: lightgrey;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropdown-menu{
+        display: block;
+      }
+
+      .dropdown:hover{
+        background-color: transparent;
+      }
+
+      h1 {
+        font-size: 70px;
+
+        padding-top: 70px;
+        font-family: "Lucida Handwriting", Helevetica, sans-serif;
+        color: black;
+      }
+
+      h2 {
+        padding-top: 20px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: black;
+      }
+
+      .dropbtn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 8.7px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+/* MAIN-CONTENT */
+
+
+.cover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: #e79702;
+}
+.phone{
+    z-index: 1;
+    font-weight: 200;
+}
+.phone i{
+    color: #000;
+}
+.phone a{
+    color:#000;
+    font-size: 13px;
+    font-weight: bold;
+}
+.reg{
+    width: 50%;
+    text-align:right;
+}
+.reg a{
+    color:#000;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.social-icon{
+    display: inline-block;
+    width: 50%;
+    
+}
+.social-icon p{
+    display:block;
+    width: 100%;
+
+}
+.social-icon p a{
+    height: 30px;
+    margin-right: 10px;
+}
+.social-icon p a i{
+    font-size: 13px;
+    color: #000;
+}
+.social-icon p a:hover{
+    background: #f8aa02;
+    border-color: #f8aa02;
+}
+.social-icon p a:hover i{ 
+    color:#fff;
+}
+
+
+.cart .table{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.cart .table thead tr th{
+    border-top:0px;
+    font-size:16px;
+    font-weight: bold;
+    border-bottom:0px;
+}
+.cart .table thead tr td{
+    padding-top:30px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    align-self: center;
+}
+.cart .table tbody tr td .main .d-flex{
+    padding-right:30px;
+}
+.cart .table tbody tr td .main .d-flex img{
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+.cart .table tbody tr td .main .des{
+    vertical-align: middle;
+    align-self: center;
+}
+.cart .table tbody tr td .main .des p{
+    margin-bottom:0px;
+}
+.cart .table tbody tr td h6{
+    font-size:16px;
+    color:#000;
+    margin-bottom: 0px;
+}
+.counter i{
+    border: 1px solid #000;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+}
+.checkout ul{
+    border: 2px solid #ebebeb;
+    background: #f3f3f3;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:16px;
+    padding-bottom: 20px;
+}
+.checkout ul li{
+    list-style: none;
+    font-size:16px;
+    font-weight: bold;
+    color:#252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.checkout ul li.subtotal{
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom:1px solid #fff;
+    padding-bottom: 14px;
+}
+.checkout ul li.subtotal span{
+    font-weight: bold;
+}
+.checkout ul li.cart-total{
+    padding-top: 10px
+}
+.checkout ul li.cart-total span{
+    color:#e7ab3c;
+}
+.checkout ul li span{
+    float:right;
+}
+.checkout .proceed-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#252525;
+    text-transform: uppercase;
+    padding:15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+.total{
+    margin-top: 5rem;
+}
+.items-list{
+    margin-top: 5rem;
+    
+}
+
+.logo {
+        font-size: 25px;
+        font-weight: 700;
+        transform: scale(2, 2);
+        color: black;
+      }
+      .logo a {
+        text-decoration: none !important;
+      }
+      .logo-sub {
+        color: #f8ea1f;
+      }
+
+    /* EXTRA */
+
+      .quantity {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity button {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 0;
+    background: #fff
+}
+
+.quantity input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 100px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+.total-price {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.total-price .fa-rupee {
+    display: inline-block;
+    font-size: 90%;
+    margin-right: 5px;
+}
+    </style>
+
+  </head>
+  <body>
+
+        <!--Nav-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="HomePage.html">
+              <img src="../Metadata/icon.svg" height="39" width="70" />
+              <p class="logo" style="display: inline">
+                <span class="logo-sub">U</span>Markt
+              </p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsibleNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="HomePage.html">Home</a>
+                </li>
+      
+                <li class="nav-item dropdown">
+                  <button class="dropbtn">
+                    Aisle
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Aisle/Fruits&veggies.html">Fruits and vegetables</a>
+                    <a class="dropdown-item" href="Aisle/Bakery.html">Bakery</a>
+                    <a class="dropdown-item" href="Aisle/Frozen.html">Frozen</a>
+                    <a class="dropdown-item" href="Aisle/Butchery.html">Butchery</a>
+                    <a class="dropdown-item" href="Aisle/Seafood.html">Seafood</a>
+                    <a class="dropdown-item" href="Aisle/Non_Grocery.html">Non-Grocery</a>
+                  </div>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="../Front Store/Shopping-Cart.html">Shopping Cart</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="../Back%20Store/ProductList/ProductList.html"
+                    >Back Store Page</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+     <!-- SHOPPING CART -->
+
+ <div class="container-fluid">
+     <div class="row">
+
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 items-list">
+
+        <div class="cart">
+            <div class="table-responsive">
+                <table class="table">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"class="text-white">Product</th>
+                            <th scope="col"class="text-white">Price</th>
+                            <th scope="col"class="text-white">Quantity</th>
+                            <th scope="col"class="text-white">Total</th>
+                        </tr>
+                    </thead>
+
+                    <div class="product-display-div">
+                        <tbody class="table-body">
+                            <tr class="hala">
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                <img src="https://image.freepik.com/free-photo/some-tomatoes-slices-with-knife-wooden-cutting-board-top-view_176474-3944.jpg"alt="" style="width: 145px; height: 98px;">
+                                        </div>
+                                        <div class="des">
+                                            <p>Tomatoes</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$1.7$ per pound </h6> 
+                                    
+                                    
+                                
+                                </td>
+                                <td>
+                                    
+
+                                    <div class="quantity">
+                                        <button class="btn minus-btn disabled" type="button">-</button>
+                                        <input type="text" id="quantity" value="1" class="quantity">
+                                        <button class="btn plus-btn" type="button">+</button>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                   
+                                   $<span id="price" class="price">1.7</span>
+                                    
+                                    <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
+                                </td>
+                            </tr>
+                            
+
+
+                            <tr class="hala">
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                             <img src="https://www.quebec-cite.com/sites/otq/files/styles/landscape_wide_desktop/public/blog/pixnio-310204-5198x2918.jpg?itok=DFvp-eqB"alt="" style="width: 145px; height: 98px;">
+                                        </div>
+                                        <div class="des">
+                                            <p>Croissants</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$2.49/each</h6>
+                                    
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <button class="btn minus-btn disabled" type="button">-</button>
+                                        <input type="text" id="quantity" value="1" class="quantity">
+                                        <button class="btn plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $<span id="price" class="price">2.49</span>
+                                    <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
+                                </td>
+                            </tr>
+                            
+
+
+                            <tr class="hala">
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                              <img src="https://img1.mashed.com/img/gallery/frozen-pizzas-ranked-from-best-to-worst/intro-1557421988.jpg"alt="" style="width: 145px; height: 98px;">
+                                        </div>
+                                        <div class="des">
+                                            <p>Pizza</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$6.99/each</h6>
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <button class="btn minus-btn disabled" type="button">-</button>
+                                        <input type="text" id="quantity" value="1" class="quantity">
+                                        <button class="btn plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $<span id="price" class="price">6.99</span>
+                                    <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
+                                </td>
+                            </tr>
+
+                            <tr class="halas">
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                             <img src="https://www.earthfoodandfire.com/wp-content/uploads/2018/06/A-complete-guide-to-cooking-atlantic-lobster.jpg"alt="" style="width: 145px; height: 98px;">
+                                        </div>
+                                        <div class="des">
+                                            <p>Lobster</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$17.99/each</h6>
+                                    
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <button class="btn minus-btn disabled" type="button">-</button>
+                                        <input type="text" id="quantity" value="1">
+                                        <button class="btn plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $<span id="price">17.99</span>
+                                    <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
+                                </td>
+                            </tr>
+
+                            
+                            
+                        </tbody>
+                    </div>
+
+                </table>
+
+            </div>
+            </div>
+       </div>
+
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 total">
+
+        <div class="checkout">
+            <ul>
+                <li class="subtotal">subtotal
+                    <span id="price50" class="subtotal">29.17</span>
+                </li>
+                <li class="qst">QST
+                    <span id="qst">$2.917</span>
+                </li>
+                <li class="gst">GST
+                    <span id="gst">$1.45</span>
+                </li>
+                <li class="cart-total">Total
+                 <span id="plz">$33.55</span></li> 
+                
+            </ul>
+            <a href="#"class="proceed-btn">Proceed to Checkout</a>
+        </div>
+
+       </div>
+
+     </div>
+ </div>
+
+
+
+ <script type="text/javascript">
+
+ var remove = document.getElementsByClassName('remove');
+ for(i=0;i<remove.length;i++){
+    var button = remove[i];
+    button.addEventListener('click', function() {
+     var buttonClicked = event.target
+     buttonClicked.parentElement.parentElement.remove()
+     updateCartTotal()
+    })
+ }
+ 
+ 
+
+ 
+    
+ 
+ // EXTRA 
+
+ //setting default attribute to disabled of minus button
+        document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+
+        //taking value to increment decrement input value
+        var valueCount
+
+        //taking price value in variable
+        var price = document.getElementById("price").innerText;
+
+        //price calculation function
+        function priceTotal() {
+            var total = valueCount * price;
+            document.getElementById("price").innerText = total
+            document.getElementById('price50').innerText = total + 29.17
+            document.getElementById('qst').innerText = total + 0.17
+            document.getElementById('gst').innerText = total + 0.079
+            document.getElementById("plz").innerText = total + 33.55
+        }
+
+        //plus button
+        document.querySelector(".plus-btn").addEventListener("click", function() {
+            //getting value of input
+            valueCount = document.getElementById("quantity").value;
+
+            //input value increment by 1
+            valueCount++;
+
+            //setting increment input value
+            document.getElementById("quantity").value = valueCount;
+
+            if (valueCount > 1) {
+                document.querySelector(".minus-btn").removeAttribute("disabled");
+                document.querySelector(".minus-btn").classList.remove("disabled")
+            }
+
+            //calling price function
+            priceTotal()
+        })
+
+        //minus button
+        document.querySelector(".minus-btn").addEventListener("click", function() {
+            //getting value of input
+            valueCount = document.getElementById("quantity").value;
+
+            //input value increment by 1
+            valueCount--;
+
+            //setting increment input value
+            document.getElementById("quantity").value = valueCount
+
+            if (valueCount == 1) {
+                document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+            }
+
+            //calling price function
+            priceTotal()
+        })
+
+
+
+
+
+
+
+
+
+
+
+// var incrementButton = document.getElementsByClassName('plus-btn');
+// var decrementButton = document.getElementsByClassName('minus-btn')
+
+// // plus
+// for(var i = 0; i < incrementButton.length;i++){
+//    var button = incrementButton[i];
+//    button.addEventListener('click', function(e){
+//        var buttonClicked = e.target;
+//        var input = buttonClicked.parentElement.children[1];
+//        var inputValue = input.value;
+//        var newValue = parseInt(inputValue) + 1;
+//        input.value = newValue
+//        ///////////////////////////
+       
+         
+       
+//    })
+// }
+// // minus
+// for(var i = 0; i < decrementButton.length;i++){
+//      var button = decrementButton[i];
+//      button.addEventListener('click', function(e){
+//          var buttonClicked = e.target;
+//          var input = buttonClicked.parentElement.children[1];
+//          var inputValue = input.value;
+//          var newValue = parseInt(inputValue) - 1;
+//         if (newValue >= 1){
+//           input.value = newValue
+//         } else{
+//              input.value = 0;
+//         }
+//      })
+//   }
+
+       
+
+// function updateCartTotal(){
+//      var cartItemContainer = document.getElementsByClassName('table-body')[0]
+//      console.log(cartItemContainer)
+//      var cartRows = cartItemContainer.getElementsByClassName('hala')
+//      var total = 0 
+//      for(i=0;i<cartRows.length;i++){
+//        var cartRow = cartRows[i]
+//        var priceElement = cartRow.getElementsByClassName('price')[0]
+//        var quantityElement = cartRow.getElementsByClassName("quantity")[0]
+//        var priceR = priceElement.innerText
+//        var quantity = quantityElement.value
+//        total = total + (priceR * quantity)
+       
+//      }
+//      document.getElementById('plz').innerText = total 
+// }
+       
+        
+  </script>
+
+
+
+
+ 
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

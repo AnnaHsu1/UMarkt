@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="0d080b5c-ce0d-458a-8052-52ceba628b5b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Back Store/EditUserProfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front Store/HomePage.html" afterDir="false" />
+=======
+    <list default="true" id="bf294bcd-e976-4594-a38c-7b352ec55538" name="Default Changelist" comment="no reason">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+=======
+    <list default="true" id="bf294bcd-e976-4594-a38c-7b352ec55538" name="Default Changelist" comment="no reason">
+      <change beforePath="$PROJECT_DIR$/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test.html" afterDir="false" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <option value="Python Script" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+=======
+        <option value="Python Script" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <component name="ProjectId" id="1nqJxH86w0m2mf9LKY113CuV1NF" />
+=======
+  <component name="ProjectId" id="1noTVm0XSCz4PyFDKJdlZFGjkEh" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+=======
+  <component name="ProjectId" id="1noTVm0XSCz4PyFDKJdlZFGjkEh" />
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d080b5c-ce0d-458a-8052-52ceba628b5b" name="Default Changelist" comment="" />
+      <created>1612111932171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612111932171</updated>
+      <workItem from="1612111933525" duration="555000" />
+      <workItem from="1612751995291" duration="353000" />
+    </task>
+=======
+=======
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Test.html">
+    <configuration name="Test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SOEN-287-Project/Test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SOEN-287-Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Test.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf294bcd-e976-4594-a38c-7b352ec55538" name="Default Changelist" comment="" />
+      <created>1612055472178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612055472178</updated>
+      <workItem from="1612055476486" duration="1270000" />
+      <workItem from="1612058921524" duration="603000" />
+      <workItem from="1612059789218" duration="2000" />
+      <workItem from="1612059800594" duration="1000" />
+      <workItem from="1612109814284" duration="763000" />
+      <workItem from="1612110586655" duration="84000" />
+      <workItem from="1612113526604" duration="367000" />
+      <workItem from="1612904805036" duration="427000" />
+    </task>
+    <task id="LOCAL-00001" summary="just for no reason.">
+      <created>1612055813995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612055813995</updated>
+    </task>
+    <task id="LOCAL-00002" summary="no reason">
+      <created>1612056080564</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612056080564</updated>
+    </task>
+    <task id="LOCAL-00003" summary="no reason">
+      <created>1612056204221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612056204221</updated>
+    </task>
+    <task id="LOCAL-00004" summary="no reason">
+      <created>1612056247922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612056247922</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+<<<<<<< HEAD
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+=======
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just for no reason." />
+    <MESSAGE value="no reason" />
+    <option name="LAST_COMMIT_MESSAGE" value="no reason" />
+  </component>
+<<<<<<< HEAD
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+=======
+>>>>>>> 2d30b4facc649c9894d86e6003cd95800013fdd2
+</project>
